@@ -115,4 +115,4 @@ def read_gitm_into_nparrays(gitm_dir, dtime_storm_start,
     gitmbins = gitmbins[:, :, new_order, :, :]
     gitmgrid["longitude"] = np.sort(gitmgrid["longitude"], axis=0)
 
-    return gitm_dtimes, gitmgrid, gitmbins
+    return gitm_dtimes, gitmgrid, gitmbins, gitmvars
