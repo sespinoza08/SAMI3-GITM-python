@@ -222,7 +222,7 @@ def read_gitm_into_xarray(gitm_dir, dtime_storm_start,
         [newlons_for_order.index(new_lons_sorted[i])
          for i in range(len(new_lons_sorted))])
 
-    for each in range(len())f = f[:,:,:][new_order, :, :]
+    for each in range(len()):f = f[:,:,:][new_order, :, :]
     gitmgrid["longitude"] = np.sort(gitmgrid["longitude"], axis=0)
 
     return gitm_dtimes, gitmgrid, gitmbins, gitmvars
